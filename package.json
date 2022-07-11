@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "make-seed": "npx knex seed:make dev  --knexfile ./db/knexfile.js",
-    "migrate":"npx knex migrate:latest --knexfile ./db/knexfile.js",
-    "seed":"npx knex seed:run --knexfile ./db/knexfile.js",
-    "down":"npx knex migrate:down --knexfile ./db/knexfile.js",
+    "migrate": "npx knex migrate:latest --knexfile ./db/knexfile.js",
+    "seed": "npx knex seed:run --knexfile ./db/knexfile.js",
+    "down": "npx knex migrate:down --knexfile ./db/knexfile.js",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,6 +15,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "knex": "^2.1.0",
     "objection": "^3.0.1",
